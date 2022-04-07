@@ -13,28 +13,41 @@
     <title>Lista de la compra</title>
   </head>
   <body>
+    <header>
+      <h1>Lista de la compra</h1>
+      <ul>
+        <li><a href="principal.html">Principal</a></li>
+        <li><a href="index.html">Lista</a></li>
+        <li><a href="Acercade.html">Acerca de</a></li>
+      </ul>
+    </header>
     <main>
-      <header>
-        <h1>Lista de la compra</h1>
-        <ul>
-          <li><a href="principal.html">Principal</a></li>
-          <li><a href="index.html">Lista</a></li>
-          <li><a href="Acercade.html">Acerca de</a></li>
-        </ul>
-      </header>
       <section class="add-item">
-        <a src="formulary.html"><i class="fa-solid fa-circle-plus"></i></a>
+        <a href="formulary.html"><i class="fa-solid fa-circle-plus"></i></a>
+        <p>2/3 comprados</p>
       </section>
       <section class="items">
         <div class="items__name">
-          <input type="checkbox" />
-          <p>Pan</p>
-          <input type="checkbox" />
-          <p>Azúcar</p>
-          <input type="checkbox" />
-          <p>Leche</p>
+          <p>
+            <input type="checkbox" id="item1" />
+            <label for="item1">Pan</label>
+          </p>
+          <p>
+            <input type="checkbox" id="item2" />
+            <label for="item1">Azúcar</label>
+          </p>
+          <p>
+            <input type="checkbox" id="item3" />
+            <label id="item3">Leche</label>
+          </p>
         </div>
-        <div class="items__prize"></div>
+        <div class="items__prize">
+          <p>0.75€ <i class="fa-solid fa-xmark"></i></p>
+          <p>
+            <i class="fa-solid fa-xmark"></i>
+          </p>
+          <p>1.20€ <i class="fa-solid fa-xmark"></i></p>
+        </div>
       </section>
     </main>
   </body>

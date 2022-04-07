@@ -5,14 +5,16 @@ body * {
 }
 body {
   max-width: 564px;
+  margin: 0;
 }
 main {
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 header {
+  height: 75px;
   background-color: #5e81d1;
   display: flex;
   flex-direction: row;
@@ -20,7 +22,8 @@ header {
 }
 
 header h1 {
-  font-size: large;
+  padding: 11px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -29,17 +32,82 @@ header ul {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
+  padding: 0;
 }
 
-header ul li {
-  padding: 5px;
+header ul li a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  padding: 2px;
+}
+
+header ul li:nth-child(2) {
+  font-weight: bold;
 }
 
 .add-item {
-  background-color: #f87500;
+  background-color: hsl(28, 100%, 49%);
+  display: flex;
+  justify-content: space-between;
 }
+.add-item a {
+  padding: 5px;
+}
+
+.add-item a i {
+  font-size: 28px;
+  padding: 8px;
+}
+
 .items {
   background-color: #ff8d27;
   display: flex;
   justify-content: space-between;
+  height: 100vh;
+}
+
+.items__prize {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.items-prize p {
+  display: flex;
+  flex-direction: row;
+}
+
+.items__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.items-name p {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.form-item {
+  background-color: #ff8d27;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.form-item .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > input {
+  background-color: #5e81d1;
+  color: #fff;
+  border: none;
+  border-radius: 0;
 }
